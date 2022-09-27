@@ -10,3 +10,9 @@ body {
 .divider {
   @apply my-2 mx-auto w-[80%] h-[2px] bg-black text-center relative after:content-[""] after:absolute after:h-3 after:w-3 after:rounded-full after:left-[50%] after:top-[50%] after:-translate-x-1/2 after:-translate-y-1/2  after:bg-black;
 }
+.link {
+  @apply flex my-1 justify-start flex-row gap-4 p-2 py-2 w-full rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-slate-300;
+}
+.active {
+  @apply bg-slate-300;
+}

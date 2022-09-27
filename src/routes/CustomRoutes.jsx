@@ -20,6 +20,7 @@ const CustomRoutes = () => {
                 <Route path="files" element={<Files />} />
                 <Route path="plans" element={<Plans />} />
             </Route>
+            <Route path="*" element={<h1>404 Error</h1>} />
         </Routes>
     )
 }
