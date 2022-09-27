@@ -2,7 +2,7 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <main className='b bg-red-900 col-span-10'>
+        <main className='b bg-[#eee] col-span-9'>
             page
         </main>
     )
