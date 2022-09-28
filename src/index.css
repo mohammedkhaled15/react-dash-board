@@ -1,6 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
 body {
   font-family: "Roboto", "Open Sans";
-  background-color: #eee;
+  font-weight: 100;
+  background-color: #f1f5f9;
 }
 
 @tailwind base;
@@ -8,11 +15,20 @@ body {
 @tailwind utilities;
 
 .divider {
-  @apply my-2 mx-auto w-[80%] h-[2px] bg-black text-center relative after:content-[""] after:absolute after:h-3 after:w-3 after:rounded-full after:left-[50%] after:top-[50%] after:-translate-x-1/2 after:-translate-y-1/2  after:bg-black;
+  @apply my-2 mx-auto w-[60%] h-[2px] bg-black text-center relative after:content-[""] after:absolute after:h-5 after:w-5 after:border-4 after:border-white after:rounded-full after:left-[50%] after:top-[50%] after:-translate-x-1/2 after:-translate-y-1/2  after:bg-black;
 }
 .link {
-  @apply flex my-1 justify-start flex-row gap-4 p-2 py-2 w-full rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-slate-300;
+  @apply flex my-1 justify-start flex-row gap-3  p-2   w-full rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-shadow-gray transition-all;
 }
 .active {
-  @apply bg-slate-300;
+  @apply bg-shadow-gray;
+}
+.title {
+  @apply text-2xl font-bold my-8 relative inline-block after:content-[""] after:absolute after:h-1 after:w-[100%] after:bg-white after:top-[100%] after:left-0 before:content-[""] before:absolute before:bg-black before:top-[100%] before:h-1 before:w-[30%] before:left-0 before:z-10 before:rounded-lg after:rounded-lg;
+}
+section {
+  @apply px-4;
+}
+.dashboard article {
+  @apply col-span-4 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
 }
