@@ -1,7 +1,6 @@
 import WelcomeCard from "./WelcomeCard"
 import QuickDrafts from "./QuickDrafts"
 
-
 const Dashboard = () => {
     return (
         <section className='col-span-10 dashboard'>

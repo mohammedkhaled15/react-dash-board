@@ -7,7 +7,7 @@ const QuickDrafts = () => {
             <h6 className="text-text-gray">Write a Draft for Your Ideas</h6>
             <input type="text" placeholder="Title" className="bg-shadow-gray p-2 rounded-lg" />
             <textarea placeholder="Your Thoughts" className="bg-shadow-gray p-2 resize-none"></textarea>
-            <button className="bg-blue-700 p-2 px-4 self-end mr-[15%] mb-4 inline-block text-white rounded-lg">Save</button>
+            <button className="bg-blue-button p-2 px-4 self-end mr-[15%] mb-4 inline-block text-white rounded-lg">Save</button>
         </article>
     )
 }
