@@ -3,7 +3,7 @@ import QuickDrafts from "./QuickDrafts"
 
 const Dashboard = () => {
     return (
-        <section className='col-span-10 dashboard'>
+        <section className='lg:col-span-10 col-span-11 dashboard'>
             <h1 className='title'>Dashboard</h1>
             <main className='grid grid-cols-12 gap-2'>
                 <WelcomeCard />

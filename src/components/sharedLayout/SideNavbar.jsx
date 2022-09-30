@@ -46,9 +46,10 @@ const linksData = [
 
 const SideNavbar = () => {
     return (
-        <nav className='bg-[#fff] col-span-2 row-span-6 p-4 shadow-lg shadow-slate-500 min-h-screen relative'>
-            <header className="mb mb-16">
-                <h1 className='text-center font-bold'>Mohammed Khaled</h1>
+        <nav className='bg-white col-span-1 lg:col-span-2 row-span-6 p-1 md:p-4 shadow-lg shadow-slate-500 min-h-screen relative'>
+            <header className=" mb-16">
+                <h1 className='text-center font-bold hidden lg:block'>Mohammed Khaled</h1>
+                <h1 className='text-center font-bold lg:hidden text-2xl pt-4'>M</h1>
                 <div className='divider'></div>
             </header>
 
@@ -57,7 +58,7 @@ const SideNavbar = () => {
                     linksData.map((linkData) =>
                         <NavLink key={uuid()} className={({ isActive }) => isActive ? "active link" : "link"} to={`${linkData.name === "Dashboard" ? "/" : linkData.name.toLocaleLowerCase()}`}>
                             <span className="flex items-center text-lg">{<linkData.icon />}</span>
-                            <h5>{linkData.name}</h5>
+                            <h5 className="hidden lg:block">{linkData.name}</h5>
                         </NavLink>
                     )
                 }
