@@ -8,6 +8,7 @@ import { FaUniversity } from "react-icons/fa"
 import { FaUserFriends } from "react-icons/fa"
 import { ImFilesEmpty } from "react-icons/im"
 import { HiOutlineCreditCard } from "react-icons/hi"
+import Tooltip from "../utilitis/tooltip/Tooltip.jsx"
 
 const linksData = [
     {
@@ -53,13 +54,15 @@ const SideNavbar = () => {
                 <div className='divider'></div>
             </header>
 
-            <main className="flex flex-col items-start">
+            <main className="flex flex-col items-center lg:items-start">
                 {
                     linksData.map((linkData) =>
-                        <NavLink key={uuid()} className={({ isActive }) => isActive ? "active link" : "link"} to={`${linkData.name === "Dashboard" ? "/" : linkData.name.toLocaleLowerCase()}`}>
-                            <span className="flex items-center text-lg">{<linkData.icon />}</span>
-                            <h5 className="hidden lg:block">{linkData.name}</h5>
-                        </NavLink>
+                        <Tooltip content={linkData.name} direction="right">
+                            <NavLink end={linkData.name === "Dashboard"} key={uuid()} className={({ isActive }) => isActive ? "active link" : "link"} to={`${linkData.name === "Dashboard" ? "/" : linkData.name.toLocaleLowerCase()}`}>
+                                <span className="flex items-center text-lg">{<linkData.icon />}</span>
+                                <h5 className="hidden lg:block">{linkData.name}</h5>
+                            </NavLink>
+                        </Tooltip>
                     )
                 }
             </main>
