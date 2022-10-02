@@ -1,5 +1,7 @@
 import WelcomeCard from "./WelcomeCard"
 import QuickDrafts from "./QuickDrafts"
+import YearlyTargets from "./YearlyTargets"
+import TicketStatistics from "./TicketStatistics"
 
 const Dashboard = () => {
     return (
@@ -8,8 +10,8 @@ const Dashboard = () => {
             <main className='grid grid-cols-12 gap-2'>
                 <WelcomeCard />
                 <QuickDrafts />
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Year Targets</article>
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Ticket Statistics</article>
+                <YearlyTargets />
+                <TicketStatistics />
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest News</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Tasks</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Top Search Items</article>
