@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-family: "Roboto", "Open Sans";
+  font-weight: 100;
+  background-color: #f1f5f9;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.divider {
+  @apply my-2 mx-auto w-[60%] h-[2px] hidden lg:block bg-black text-center relative after:content-[""] after:absolute after:h-5 after:w-5 after:border-4 after:border-white after:rounded-full after:left-[50%] after:top-[50%] after:-translate-x-1/2 after:-translate-y-1/2  after:bg-black;
+}
+.link {
+  @apply flex my-1 justify-center lg:justify-start flex-row gap-3  p-2   w-full rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-shadow-gray transition-all;
+}
+.active {
+  @apply bg-shadow-gray;
+}
+.title {
+  @apply text-2xl font-bold my-8 relative inline-block after:content-[""] after:absolute after:h-1 after:w-[100%] after:bg-white after:top-[100%] after:left-0 before:content-[""] before:absolute before:bg-black before:top-[100%] before:h-1 before:w-[30%] before:left-0 before:z-10 before:rounded-lg after:rounded-lg;
+}
+section {
+  @apply px-4;
+}
+.dashboard article {
+  @apply lg:col-span-4 sm:col-span-6 col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
+}
+/* .progress::after {
+  content: "lksjd";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+} */
