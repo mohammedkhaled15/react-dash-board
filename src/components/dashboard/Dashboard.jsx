@@ -2,6 +2,7 @@ import WelcomeCard from "./WelcomeCard"
 import QuickDrafts from "./QuickDrafts"
 import YearlyTargets from "./YearlyTargets"
 import TicketStatistics from "./TicketStatistics"
+import LatestNews from "./LatestNews"
 
 const Dashboard = () => {
     return (
@@ -12,7 +13,7 @@ const Dashboard = () => {
                 <QuickDrafts />
                 <YearlyTargets />
                 <TicketStatistics />
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Latest News</article>
+                <LatestNews />
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Tasks</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Top Search Items</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Uploads</article>
