@@ -47,8 +47,8 @@ const YearlyTargets = () => {
             <main>
                 {
                     targets.map((target, index) =>
-                        <div key={index} className="flex flex-row gap-6 my-2">
-                            <div className={` p-6 mr-2 ${target.bgColor}`}>
+                        <div key={index} className="flex flex-row gap-2 my-2">
+                            <div className={` p-6 ${target.bgColor}`}>
                                 {<target.icon size={22} color={`${target.color}`} />}
                             </div>
                             <div className="data flex-1 flex flex-col gap-1 justify-center">
