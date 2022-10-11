@@ -59,7 +59,7 @@ const SideNavbar = () => {
                     linksData.map((linkData) =>
                         <Tooltip key={uuid()} content={linkData.name} direction="right" delay={1500}>
                             <NavLink end={linkData.name === "Dashboard"} className={({ isActive }) => isActive ? "active link" : "link"} to={`${linkData.name === "Dashboard" ? "/" : linkData.name.toLocaleLowerCase()}`}>
-                                <span className="flex items-center text-lg">{<linkData.icon />}</span>
+                                <span className="flex items-center text-lg mr-2">{<linkData.icon />}</span>
                                 <h5 className="hidden lg:block">{linkData.name}</h5>
                             </NavLink>
                         </Tooltip>
