@@ -7,6 +7,7 @@ import LatestTasks from "./LatestTasks"
 import TopSearchItems from "./TopSearchItems"
 import LatestUploads from "./LatestUploads"
 import LatestProjectProgress from "./LatestProjectProgress"
+import Reminders from "./Reminders"
 
 const Dashboard = () => {
     return (
@@ -22,7 +23,7 @@ const Dashboard = () => {
                 <TopSearchItems />
                 <LatestUploads />
                 <LatestProjectProgress />
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Reminders</article>
+                <Reminders />
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Post</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Social Media Stats</article>
                 <article className='text-center bg-slate-600 col-span-12 h-40'>Projects</article>
