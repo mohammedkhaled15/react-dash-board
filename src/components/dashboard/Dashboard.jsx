@@ -3,6 +3,8 @@ import QuickDrafts from "./QuickDrafts"
 import YearlyTargets from "./YearlyTargets"
 import TicketStatistics from "./TicketStatistics"
 import LatestNews from "./LatestNews"
+import LatestTasks from "./LatestTasks"
+import TopSearchItems from "./TopSearchItems"
 
 const Dashboard = () => {
     return (
@@ -14,8 +16,8 @@ const Dashboard = () => {
                 <YearlyTargets />
                 <TicketStatistics />
                 <LatestNews />
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Tasks</article>
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Top Search Items</article>
+                <LatestTasks />
+                <TopSearchItems />
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Uploads</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Last Project Progress</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Reminders</article>
