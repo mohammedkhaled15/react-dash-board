@@ -5,6 +5,8 @@ import TicketStatistics from "./TicketStatistics"
 import LatestNews from "./LatestNews"
 import LatestTasks from "./LatestTasks"
 import TopSearchItems from "./TopSearchItems"
+import LatestUploads from "./LatestUploads"
+import LatestProjectProgress from "./LatestProjectProgress"
 
 const Dashboard = () => {
     return (
@@ -18,8 +20,8 @@ const Dashboard = () => {
                 <LatestNews />
                 <LatestTasks />
                 <TopSearchItems />
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Uploads</article>
-                <article className='text-center bg-slate-600 col-span-4 h-40'>Last Project Progress</article>
+                <LatestUploads />
+                <LatestProjectProgress />
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Reminders</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Latest Post</article>
                 <article className='text-center bg-slate-600 col-span-4 h-40'>Social Media Stats</article>

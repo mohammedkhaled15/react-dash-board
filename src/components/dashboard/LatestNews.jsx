@@ -39,8 +39,8 @@ const LatestNews = () => {
             <main className="flex flex-col gap-4 mt-4">
                 {
                     latestNews.map((news, index) =>
-                        <>
-                            <div key={index} className="flex flex-row justify-between items-center flex-wrap gap-2">
+                        <div key={index}>
+                            <div className="flex flex-row justify-between items-center flex-wrap gap-2">
                                 <div className="flex flex-row  justify-start gap-2 w-[80%]">
                                     <div className="w-1/2 md:w-1/4 rounded-lg overflow-hidden">
                                         <img className="w-full h-full" src={news.imgSrc} alt="topic" />
@@ -53,7 +53,7 @@ const LatestNews = () => {
                                 <span className="t text-[0.6rem] bg-shadow-gray p-1 rounded-lg">{`${news.since} Days ago`}</span>
                             </div>
                             <span className={`${index === latestNews.length - 1 ? "hidden" : "inline-block"} w-[100%] bg-shadow-gray h-[2px]`}></span>
-                        </>
+                        </div>
                     )
                 }
             </main>

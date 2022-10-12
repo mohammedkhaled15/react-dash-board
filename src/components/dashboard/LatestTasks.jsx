@@ -36,7 +36,7 @@ const LatestTasks = () => {
             <main className="flex flex-col gap-2 mt-4">
                 {
                     latestTasks.map((task, index) =>
-                        <div>
+                        <div key={index}>
                             <h2 className={` ${task.cancelled ? "hidden" : "block text-xs font-bold"}`}>{task.title}</h2>
                             <del className={` ${task.cancelled ? "block text-xs font-bold text-text-gray" : "hidden"}`}>{task.title}</del>
                             <h6 className={` ${task.cancelled ? "hidden" : "block text-text-gray text-[0.6rem]"}`}>{task.subtitle}</h6>

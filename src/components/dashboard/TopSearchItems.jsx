@@ -32,13 +32,13 @@ const TopSearchItems = () => {
                 <h3 className='font-bold '>Top Search Items</h3>
             </header>
             <main className="flex flex-col gap-2 mt-4">
-                <div>
+                <div className="flex flex-row justify-between mb-2 text-text-gray">
                     <h2>Keyword</h2>
                     <h2>Search Count</h2>
                 </div>
                 {
                     topSearchItems.map((item, index) =>
-                        <div className="flex flex-row justify-between">
+                        <div key={index} className="flex flex-row justify-between">
                             <h3>{item.keyword}</h3>
                             <span className="text-xs bg-[#eee] rounded-lg p-2">{item.searchCount}</span>
                         </div>

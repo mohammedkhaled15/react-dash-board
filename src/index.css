@@ -32,9 +32,16 @@ section {
 .dashboard article {
   @apply lg:col-span-4 sm:col-span-6 col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
 }
-/* .progress::after {
-  content: "lksjd";
-  position: absolute;
-  width: 20px;
-  height: 30px;
-} */
+
+.step {
+  @apply text-black font-bold;
+}
+.step-success:after {
+  @apply border-2 border-[#eee] border-solid;
+}
+.step-warning:after {
+  @apply border-2 border-[#eee] border-solid;
+}
+.step-neutral:after {
+  @apply border-2 border-[#eee] border-solid;
+}
