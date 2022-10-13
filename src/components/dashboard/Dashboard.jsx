@@ -10,6 +10,7 @@ import LatestProjectProgress from "./LatestProjectProgress"
 import Reminders from "./Reminders"
 import LatestPost from "./LatestPost"
 import SocialMedia from "./SocialMedia"
+import Projects from "./Projects"
 
 const Dashboard = () => {
     return (
@@ -28,7 +29,7 @@ const Dashboard = () => {
                 <Reminders />
                 <LatestPost />
                 <SocialMedia />
-                <article className='text-center bg-slate-600 col-span-12 h-40'>Projects</article>
+                <Projects />
             </main>
         </section>
     )

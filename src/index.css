@@ -32,8 +32,11 @@ body {
 section {
   @apply px-4;
 }
-.dashboard article {
+.dashboard article:not(:last-child) {
   @apply lg:col-span-4 sm:col-span-6 col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
+}
+.dashboard article:last-child {
+  @apply col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
 }
 
 .step {
@@ -47,4 +50,13 @@ section {
 }
 .step-neutral:after {
   @apply border-2 border-[#eee] border-solid;
+}
+
+.projects table tr {
+  @apply border-b-2 border-solid border-[#eee];
+}
+
+.projects table tr td,
+.projects table tr th {
+  @apply py-3;
 }
