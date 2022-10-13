@@ -40,7 +40,7 @@ const Reminders = () => {
                                 <span className={`w-[20px] h-[20px] absolute rounded-full ${rem.backColor}`}></span>
                             </div>
                             <div>
-                                <h3 className="font-bold text-sm">{rem.title}</h3>
+                                <h3 className="font-bold text-[0.7rem] ">{rem.title}</h3>
                                 <h6 className="text-text-gray text-xs">{rem.date}</h6>
                             </div>
                         </div>
