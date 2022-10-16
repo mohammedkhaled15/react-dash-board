@@ -58,5 +58,5 @@ section {
 
 .projects table tr td,
 .projects table tr th {
-  @apply py-3;
+  @apply py-3 min-w-[6.5rem];
 }
