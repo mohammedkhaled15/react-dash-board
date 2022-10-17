@@ -21,7 +21,7 @@ body {
   @apply my-2 mx-auto w-[60%] h-[2px] hidden lg:block bg-black text-center relative after:content-[""] after:absolute after:h-5 after:w-5 after:border-4 after:border-white after:rounded-full after:left-[50%] after:top-[50%] after:-translate-x-1/2 after:-translate-y-1/2  after:bg-black;
 }
 .link {
-  @apply flex my-1 justify-center lg:justify-start flex-row gap-3  p-2   lg:w-36 rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-shadow-gray transition-all;
+  @apply flex my-1 justify-center lg:justify-start flex-row gap-3  p-2   lg:w-36 rounded-lg text-[1.1rem] font-normal hover:font-bold hover:bg-shadow-gray transition-all no-underline;
 }
 .active {
   @apply bg-shadow-gray;
