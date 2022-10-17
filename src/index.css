@@ -38,6 +38,9 @@ section {
 .dashboard article:last-child {
   @apply col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
 }
+article {
+  @apply lg:col-span-4 sm:col-span-6 col-span-12 row-span-1 h-[100%] rounded-xl overflow-hidden bg-white;
+}
 
 .step {
   @apply text-black font-bold;

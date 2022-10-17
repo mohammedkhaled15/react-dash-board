@@ -1,4 +1,5 @@
 import { FileIcon } from 'react-file-icon';
+import Divider from '../utilitis/tooltip/Divider';
 
 const latestUploads = [
     {
@@ -49,7 +50,7 @@ const LatestUploads = () => {
                                 </section>
                                 <span className='bg-shadow-gray p-1 rounded-lg text-xs'>{`${file.size}mb`}</span>
                             </div>
-                            <span className={`${index === latestUploads.length - 1 ? "hidden" : "inline-block"} w-[100%] bg-shadow-gray h-[2px]`}></span>
+                            <Divider index={index} array={latestUploads} />
                         </div>
                     )
                 }

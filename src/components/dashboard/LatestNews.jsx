@@ -2,6 +2,7 @@ import pic1 from "../../assets/imgs/latest-news-1.jpg"
 import pic2 from "../../assets/imgs/latest-news-2.jpg"
 import pic3 from "../../assets/imgs/latest-news-3.jpg"
 import pic4 from "../../assets/imgs/latest-news-4.jpg"
+import Divider from "../utilitis/tooltip/Divider"
 const latestNews = [
     {
         imgSrc: pic1,
@@ -52,7 +53,7 @@ const LatestNews = () => {
                                 </div>
                                 <span className="t text-[0.6rem] bg-shadow-gray p-1 rounded-lg">{`${news.since} Days ago`}</span>
                             </div>
-                            <span className={`${index === latestNews.length - 1 ? "hidden" : "inline-block"} w-[100%] bg-shadow-gray h-[2px]`}></span>
+                            <Divider index={index} array={latestNews} />
                         </div>
                     )
                 }

@@ -1,3 +1,5 @@
+import Divider from "../utilitis/tooltip/Divider"
+
 const latestTasks = [
     {
         title: "Record one new video",
@@ -31,7 +33,7 @@ const LatestTasks = () => {
     return (
         <article className='flex flex-col gap-4 py-4 px-2 justify-start'>
             <header>
-                <h3 className='font-bold '>Latest News</h3>
+                <h3 className='font-bold '>Latest Tasks</h3>
             </header>
             <main className="flex flex-col gap-2 mt-4">
                 {
@@ -41,7 +43,7 @@ const LatestTasks = () => {
                             <del className={` ${task.cancelled ? "block text-xs font-bold text-text-gray" : "hidden"}`}>{task.title}</del>
                             <h6 className={` ${task.cancelled ? "hidden" : "block text-text-gray text-[0.6rem]"}`}>{task.subtitle}</h6>
                             <del className={`   ${task.cancelled ? "block text-text-gray text-[0.6rem]" : "hidden"}`}>{task.subtitle}</del>
-                            <span className={`${index === latestTasks.length - 1 ? "hidden" : "inline-block"} w-[100%] bg-shadow-gray h-[2px]`}></span>
+                            <Divider index={index} array={latestTasks} />
                         </div>
                     )
                 }
