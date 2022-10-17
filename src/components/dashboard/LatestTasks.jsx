@@ -1,4 +1,4 @@
-import Divider from "../utilitis/tooltip/Divider"
+import Divider from "../utilitis/Divider"
 
 const latestTasks = [
     {

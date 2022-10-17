@@ -2,6 +2,7 @@ import React from 'react'
 import GeneralInfo from './GeneralInfo'
 import SecurityInfo from './SecurityInfo'
 import SiteControl from './SiteControl'
+import SocialInfo from './SocialInfo'
 
 const Setting = () => {
     return (
@@ -11,6 +12,7 @@ const Setting = () => {
                 <SiteControl />
                 <GeneralInfo />
                 <SecurityInfo />
+                <SocialInfo />
             </main>
         </section>
     )

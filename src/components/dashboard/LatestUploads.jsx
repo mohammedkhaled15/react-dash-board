@@ -1,5 +1,5 @@
 import { FileIcon } from 'react-file-icon';
-import Divider from '../utilitis/tooltip/Divider';
+import Divider from '../utilitis/Divider';
 
 const latestUploads = [
     {

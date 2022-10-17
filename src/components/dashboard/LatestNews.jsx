@@ -2,7 +2,8 @@ import pic1 from "../../assets/imgs/latest-news-1.jpg"
 import pic2 from "../../assets/imgs/latest-news-2.jpg"
 import pic3 from "../../assets/imgs/latest-news-3.jpg"
 import pic4 from "../../assets/imgs/latest-news-4.jpg"
-import Divider from "../utilitis/tooltip/Divider"
+import Divider from "../utilitis/Divider"
+
 const latestNews = [
     {
         imgSrc: pic1,
