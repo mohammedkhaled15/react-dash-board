@@ -1,8 +1,10 @@
 import React from 'react'
+import BackupManager from './BackupManager'
 import GeneralInfo from './GeneralInfo'
 import SecurityInfo from './SecurityInfo'
 import SiteControl from './SiteControl'
 import SocialInfo from './SocialInfo'
+import WidgetControl from './WidgetControl'
 
 const Setting = () => {
     return (
@@ -13,6 +15,8 @@ const Setting = () => {
                 <GeneralInfo />
                 <SecurityInfo />
                 <SocialInfo />
+                <WidgetControl />
+                <BackupManager />
             </main>
         </section>
     )
