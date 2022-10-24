@@ -27,7 +27,7 @@ body {
   @apply bg-shadow-gray;
 }
 .title {
-  @apply text-2xl font-bold my-8 relative inline-block after:content-[""] after:absolute after:h-1 after:w-[100%] after:bg-white after:top-[100%] after:left-0 before:content-[""] before:absolute before:bg-black before:top-[100%] before:h-1 before:w-[30%] before:left-0 before:z-10 before:rounded-lg after:rounded-lg;
+  @apply text-2xl font-bold my-8 relative inline-block after:content-[""] after:absolute after:h-1 after:w-[100%] after:bg-white after:top-[100%] after:left-0 before:content-[""] before:absolute before:bg-black before:top-[100%] before:h-1 before:w-[30%] before:left-0 before:z-10 before:rounded-lg after:rounded-lg hover:before:w-full transition-all before:duration-300;
 }
 section {
   @apply px-4;
