@@ -1,4 +1,6 @@
 import GeneralInfo from "./GeneralInfo"
+import LatestActiv from "./LatestActiv"
+import MySkills from "./MySkills"
 
 const Profile = () => {
     return (
@@ -6,6 +8,8 @@ const Profile = () => {
             <h1 className='title'>Profile</h1>
             <main className='grid grid-cols-12 gap-2'>
                 <GeneralInfo />
+                <MySkills />
+                <LatestActiv />
             </main>
         </section>
     )
