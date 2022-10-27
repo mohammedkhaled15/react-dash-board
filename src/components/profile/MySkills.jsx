@@ -1,18 +1,17 @@
 import Divider from "../utilitis/Divider"
 
 const skills = [
-    ["HTML", "Pugjs", "HAML"],
-    ["CSS", "SASS", "STYLUS"],
-    ["JavaScript", "TypeScript"],
-    ["ReactJs", "VueJS"],
-    ["Jest", "Jasmine"],
-    ["PHP", "Laravel"],
-    ["Python", "Django"]
-
+    { prop1: "HTML", prop2: "Pugjs", prop3: "HAML" },
+    { prop1: "CSS", prop2: "SASS", prop3: "STYLUS" },
+    { prop1: "JavaScript", prop2: "TypeScript" },
+    { prop1: "ReactJs", prop2: "VueJS" },
+    { prop1: "Jest", prop2: "Jasmine" },
+    { prop1: "PHP", prop2: "Laravel" },
+    { prop1: "Python", prop2: "Django" }
 ]
 const MySkills = () => {
     return (
-        <article className='flex flex-row flex-wrap  py-4 px-2 justify-start col-span-4'>
+        <article className='flex flex-row flex-wrap  py-4 px-2 justify-start col-span-12 md:col-span-4'>
             <header>
                 <h3 className='font-bold '>My Skills</h3>
                 <h6 className="text-text-gray text-xs">Complete Skill List</h6>
@@ -22,11 +21,11 @@ const MySkills = () => {
                     skills.map((skillType, index) =>
                         <div key={index}>
                             {
-                                skillType.map((skill, index) =>
-                                    <span className="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded">{skill}</span>
+                                Object.entries(skillType).map((skill, index) =>
+                                    <span key={index} className="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ">{skill[1]}</span>
                                 )
                             }
-                            <Divider index={index} array={skills} />
+                            <Divider array={skills} index={index} />
                         </div>
                     )
                 }
