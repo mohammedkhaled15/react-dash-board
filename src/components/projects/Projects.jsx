@@ -21,7 +21,100 @@ const projects = [
             bgColor: "#F44336"
         },
         price: "2500"
-    }
+    }, {
+        title: "Academy Portal",
+        releaseDate: "15/10/2021",
+        subTitle: "Academy Portal Programming and design",
+        contributers: [girl, girl2, man],
+        usedSkills: ["Programming", "Design"],
+        progress: {
+            percent: 70,
+            bgColor: "#14C154"
+        },
+        price: "1800"
+    },
+    {
+        title: "Chatting Application",
+        releaseDate: "15/10/2021",
+        subTitle: "Chatting Application design",
+        contributers: [girl2],
+        usedSkills: ["Design"],
+        progress: {
+            percent: 90,
+            bgColor: "#006CFF"
+        },
+        price: "950"
+    },
+    {
+        title: "El-Zero Dashboard",
+        releaseDate: "15/10/2021",
+        subTitle: "El-Zero Dashboard design & progranmming & hosting",
+        contributers: [girl, girl2, man, man2],
+        usedSkills: ["Programming", "Design", "Hosting", "Marketing"],
+        progress: {
+            percent: 50,
+            bgColor: "#F44336"
+        },
+        price: "2500"
+    }, {
+        title: "Academy Portal",
+        releaseDate: "15/10/2021",
+        subTitle: "Academy Portal Programming and design",
+        contributers: [girl, girl2, man],
+        usedSkills: ["Programming", "Design"],
+        progress: {
+            percent: 70,
+            bgColor: "#14C154"
+        },
+        price: "1800"
+    },
+    {
+        title: "Chatting Application",
+        releaseDate: "15/10/2021",
+        subTitle: "Chatting Application design",
+        contributers: [girl2],
+        usedSkills: ["Design"],
+        progress: {
+            percent: 90,
+            bgColor: "#006CFF"
+        },
+        price: "950"
+    },
+    {
+        title: "El-Zero Dashboard",
+        releaseDate: "15/10/2021",
+        subTitle: "El-Zero Dashboard design & progranmming & hosting",
+        contributers: [girl, girl2, man, man2],
+        usedSkills: ["Programming", "Design", "Hosting", "Marketing"],
+        progress: {
+            percent: 50,
+            bgColor: "#F44336"
+        },
+        price: "2500"
+    }, {
+        title: "Academy Portal",
+        releaseDate: "15/10/2021",
+        subTitle: "Academy Portal Programming and design",
+        contributers: [girl, girl2, man],
+        usedSkills: ["Programming", "Design"],
+        progress: {
+            percent: 70,
+            bgColor: "#14C154"
+        },
+        price: "1800"
+    },
+    {
+        title: "Chatting Application",
+        releaseDate: "15/10/2021",
+        subTitle: "Chatting Application design",
+        contributers: [girl2],
+        usedSkills: ["Design"],
+        progress: {
+            percent: 90,
+            bgColor: "#006CFF"
+        },
+        price: "950"
+    },
 ]
 
 const Projects = () => {
